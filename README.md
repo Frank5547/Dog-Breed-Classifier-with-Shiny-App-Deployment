@@ -29,7 +29,9 @@ The first folder contains the code which I used to actually deploy the R Shiny a
     model_transfer.fc = classifier
     
     # Load best model
-    model_transfer.load_state_dict(torch.load(best_model, map_location = "cpu"))
+    model_transfer.load_state_dict(torch.load(best_model))
+
+The best model can be obtained from https://drive.google.com/drive/folders/1ocUDVNVijF5j5Z4ysC8X-XE-X3JHpTwz  
 
 The second folder above represents the orginal code that I used to build and test the app locally in my computer. This includes the training of the LSTM model and the testing with a separate test set that yielded an 88% test accuracy. If you want to run this app locally, I suggest that you use the files in this folder and then obtain the "Sentiment_Best_Model.pt" file from this link https://drive.google.com/open?id=1g4zOfEiGDUGWJm4mUz5V0xGl8WlF_BV2. After that, just run "Movie_Review_Sentiment_Predictions_App.R" inside RStudio and you should be good to go!
 
