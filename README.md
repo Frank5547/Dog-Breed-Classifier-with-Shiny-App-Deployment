@@ -1,6 +1,8 @@
 # Dog-Breed-Classifier-with-Shiny-App-Deployment
 Background Code behind my deployed R Shiny app located at https://thalamus.shinyapps.io/Dog_Classifier_Deployment/
-containing a dog breed classifier built using transfer learning in PyTorch . A couple examples of how this app works can be seen below:
+containing a dog breed classifier built using transfer learning in PyTorch. This model yielded a classification accuracy of 83% in the test set. 
+
+The functioning of the app is very straighforward. Simply upload an image with a dog and click the button to get the top 3 most likley breeds. A couple examples of how this app works can be seen below:
 
 ![German Sheppard](Dog_Breed_Class_ex_gs.png)
 ![Mastiff](Dog_Breed_Class_ex_m.png)
@@ -31,9 +33,8 @@ The first folder contains the code which I used to actually deploy the R Shiny a
     # Load best model
     model_transfer.load_state_dict(torch.load(best_model))
 
-The best model can be obtained from https://drive.google.com/drive/folders/1ocUDVNVijF5j5Z4ysC8X-XE-X3JHpTwz  
+The best model as well as the data used can be obtained from https://drive.google.com/drive/folders/1ocUDVNVijF5j5Z4ysC8X-XE-X3JHpTwz  
 
-The second folder above represents the orginal code that I used to build and test the app locally in my computer. This includes the training of the LSTM model and the testing with a separate test set that yielded an 88% test accuracy. If you want to run this app locally, I suggest that you use the files in this folder and then obtain the "Sentiment_Best_Model.pt" file from this link https://drive.google.com/open?id=1g4zOfEiGDUGWJm4mUz5V0xGl8WlF_BV2. After that, just run "Movie_Review_Sentiment_Predictions_App.R" inside RStudio and you should be good to go!
+The second folder above represents the orginal code that I used to build and test the app locally in my computer. This includes the script were I trained and tested the model.
 
-Please be advised, it may take a few seconds for the Shiny app to load once you click on the URL above, and, once you type a movie review, to give the first prediction. If anyone notices any errors, please let me know, so I can fix them. It would be much appreciated!
-
+Please be advised, it may take a few seconds for the Shiny app to load once you click on the URL above, and to give the first prediction once you upload a picture. If anyone notices any errors, please let me know, so I can fix them. It would be much appreciated!
