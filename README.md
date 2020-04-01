@@ -7,7 +7,7 @@ The functioning of the app is very straighforward. Simply upload an image with a
 ![German Sheppard](Dog_Breed_Class_ex_gs.png)
 ![Mastiff](Dog_Breed_Class_ex_m.png)
 
-The first folder contains the code which I used to actually deploy the R Shiny app in www.shinyapps.io. As mentioned the underlying model is built using transfer learning. It is based on ResNet50, but has custom fully-connected layers at the end to adapt it to the purpose of dog breed classification. Thus, the code to instantiate the model is as follows:
+The first folder above represents the orginal code that I used to build and test the app locally in my computer. This includes the script were I trained and tested the model. As mentioned, the underlying model is built using transfer learning. It is based on ResNet50, but has custom fully-connected layers at the end to adapt it to the purpose of dog breed classification. Thus, the code to instantiate the model is as follows:
 
     # Instantiate the model
     # Specify model architecture 
@@ -35,6 +35,6 @@ The first folder contains the code which I used to actually deploy the R Shiny a
 
 The best model as well as the data used can be obtained from https://drive.google.com/drive/folders/1ocUDVNVijF5j5Z4ysC8X-XE-X3JHpTwz  
 
-The second folder above represents the orginal code that I used to build and test the app locally in my computer. This includes the script were I trained and tested the model.
+The second folder contains the code which I used to actually deploy the R Shiny app in www.shinyapps.io
 
 Please be advised, it may take a few seconds for the Shiny app to load once you click on the URL above, and to give the first prediction once you upload a picture. If anyone notices any errors, please let me know, so I can fix them. It would be much appreciated!
