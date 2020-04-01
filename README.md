@@ -2,7 +2,7 @@
 Background Code behind my deployed R Shiny app located at https://thalamus.shinyapps.io/Dog_Classifier_Deployment/
 containing a dog breed classifier built using transfer learning in PyTorch. This model yielded a classification accuracy of 83% in the test set. 
 
-The functioning of the app is very straighforward. Simply upload an image with a dog and click the button to get the top 3 most likley breeds. A couple examples of how this app works can be seen below:
+The functioning of the app is very straighforward. Simply upload an image with a dog (Supported formats are .png, .jpeg, .jpg, .tiff) and then click the button to get the top 3 most likley breeds. This procedure can be done multiple times with multiple pictures. A couple examples of how this app works can be seen below:
 
 ![German Sheppard](Dog_Breed_Class_ex_gs.png)
 ![Mastiff](Dog_Breed_Class_ex_m.png)
