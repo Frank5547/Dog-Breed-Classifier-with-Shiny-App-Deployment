@@ -5,7 +5,7 @@ library(reticulate)
 library(imager)
 virtualenv_create(envname = "python_environment", python = "python3")
 virtualenv_remove(envname = "python_environment", packages = "pip")
-virtualenv_install(envname = "python_environment", packages = c("pip==19.0.3","numpy","nltk","torch"), ignore_installed = TRUE)
+virtualenv_install("python_environment", packages = c("pip==19.0.3","numpy","torchvision","PIL","collections","torch"),ignore_installed = TRUE)
 reticulate::use_virtualenv("python_environment", required = TRUE)
 source("get_Dog_Prediction.R")
 
