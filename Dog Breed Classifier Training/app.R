@@ -3,9 +3,9 @@ library(shinythemes)
 library(shinyjs)
 library(reticulate)
 library(imager)
-virtualenv_create(envname = "python_environment", python = "python3")
-virtualenv_install("python_environment", packages = c("numpy","torchvision","PIL","collections","torch"))
-reticulate::use_virtualenv("python_environment", required = TRUE)
+#virtualenv_create(envname = "python_environment", python = "python3")
+#virtualenv_install("python_environment", packages = c("numpy","torchvision","PIL","collections","torch"))
+#reticulate::use_virtualenv("python_environment", required = TRUE)
 source("get_Dog_Prediction.R")
 
 # Define UI for application
